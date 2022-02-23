@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://bit.ly/3G0R9ah">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Social Book</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+            <img src="logo.png" class="logo">
+            </a>
+            <ul>
+                <li>
+                    <img src="notification.png" alt="">
+                    <img src="inbox.png" alt="">
+                    <img src="video.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="nav-user-icon online" onclick="myScript()">
+                <img src="profile-pic.png">
+            </div>
+        </div>
+        <div class="settings-menu">
+            <div id="dark-btn1">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="profile-pic.png">
+                    <div>
+                        <p>John Nicholas</p>
+                        <a href="">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="setting.png" class="settings-icon">
+                    <a href="">Settings & Privacy <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="help.png" class="settings-icon">
+                    <a href="">Help & Support <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="display.png" class="settings-icon">
+                    <a href="">Display & Accessibility <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="logout.png" class="settings-icon">
+                    <a href="">Log Out <img src="arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="chat-img">
+        <div class="container">
+            <div class="leftsidebar">
+            </div>
+            <div class="main-content">
+            </div>
+            <div class="right-sidebar">
+                <div class="sidebar-title">
+                    <h4 style="color: #3084f1;">Chats</h4>
+                    <button class="new">NEW</button>
+                    <hr>
+                </div>
+                <div class="event">
+                    <div class="Hana">
+                        <img src="member-1.png" class="hana-chat">
+                    </div>
+                    <div class="name">
+                        <br>
+                        <h4>Hana Barnes</h4>
+                       <img src="more.png" class="more-hana" alt="">
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="event">
+                    <div class="Hana">
+                        <img src="member-2.png" class="hana-chat">
+                    </div>
+                    <div class="name">
+                        <br>
+                        <h4>Sam King</h4>
+                        <img src="more.png" class="more-sam" alt="">
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="event">
+                    <div class="Hana">
+                        <img src="member-3.png" class="hana-chat">
+                    </div>
+                    <div class="name">
+                        <br>
+                        <h4>Willie Barnes</h4>
+                        <img src="more.png" class="more-willie" alt="">
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="event">
+                    <div class="Hana">
+                        <img src="member-4.png" class="hana-chat">
+                    </div>
+                    <div class="name">
+                        <br>
+                        <h4>Joe Marvelous</h4>
+                        <img src="more.png" class="more-joe" alt="">
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="event">
+                    <div class="Hana">
+                        <img src="member-5.png" class="hana-chat">
+                    </div>
+                    <div class="name">
+                        <br>
+                        <h4>Jake Watson</h4>
+                        <img src="more.png" class="more-jake" alt="">
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="event">
+                    <div class="Hana">
+                        <img src="member-6.png" class="hana-chat">
+                    </div>
+                    <div class="name">
+                        <br>
+                        <h4>Marilou Silvia</h4>
+                        <img src="more.png" class="more-marilou" alt="">
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="event">
+                    <div class="Hana">
+                        <img src="member-7.png" class="hana-chat">
+                    </div>
+                    <div class="name">
+                        <br>
+                        <h4>Gerard Harshad</h4>
+                        <img src="more.png" class="more-gerard" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-div">
+            <center>
+                <img src="chaticon.png">
+            </center>
+        </div>
+    </div>
+    <script>
+        var settingmenu = document.querySelector(".settings-menu");
+        var darkBtn = document.getElementById("dark-btn1");
+
+        function myScript(){
+            settingmenu.classList.toggle("settings-menu-height");
+        }
+        darkBtn.onclick = function () {
+            darkBtn.classList.toggle("dark-btn-on");
+            document.body.classList.toggle("dark-theme");
+            if (localStorage.getItem("theme") == "light") {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        }
+
+        if (localStorage.getItem("theme") == "light") {
+            darkBtn.classList.remove("dark-btn-on");
+            document.body.classList.remove("dark-theme");
+        } else if (localStorage.getItem("theme") == "dark") {
+            darkBtn.classList.add("dark-btn-on");
+            document.body.classList.add("dark-theme");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    </script>
+</body>
+
+</html>

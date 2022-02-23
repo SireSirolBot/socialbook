@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://bit.ly/3G0R9ah">
+    <script src="main.js"></script>
+    <title>Social Book</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+            <img src="logo.png" class="logo">
+            </a>
+            <ul>
+                <li>
+                    <img src="notification.png" alt="">
+                    <img src="inbox.png" alt="">
+                    <img src="video.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="myScript()">
+                <img src="profile-pic.png">
+            </div>
+        </div>
+
+
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="profile-pic.png">
+                    <div>
+                        <p>John Nicholas</p>
+                        <a href="">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="">Help Us To Improve New Design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="setting.png" class="settings-icon">
+                    <a href="">Settings & Privacy <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="help.png" class="settings-icon">
+                    <a href="">Help & Support <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="display.png" class="settings-icon">
+                    <a href="">Display & Accessibility <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="logout.png" class="settings-icon">
+                    <a href="">Log Out <img src="arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="news.html"><img src="news.png" alt="">Latest news</a>
+                <a href="#"><img src="friends.png" alt="">Friends</a>
+                <a href="#"><img src="group.png" alt="">Group</a>
+                <a href="#"><img src="marketplace.png" alt="">Market Place</a>
+                <a href="#"><img src="watch.png" alt="">Watch</a>
+                <a href="">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href=""><img src="shortcut-1.png" alt="">Web Developers</a>
+                <a href=""><img src="shortcut-2.png" alt="">Web Design Course</a>
+                <a href=""><img src="shortcut-3.png" alt="">Full Stack Development</a>
+                <a href=""><img src="shortcut-4.png" alt="">Website Experts</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Aaj-tak-logo.png">
+
+                        <div>
+                            <p>Aaj Tak <i class="fa fa-check-circle"></i></p>
+                            <span>5 Jan 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="" class="fa fa-ellipsis-v"></a>
+                </div>
+                <p class="post-text">Covid cases in Delhi: 24 घंटे के भीतर दिल्ली में 40 मौतें, 27561 नए केस</p>
+                <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202201/covid_17-sixteen_nine_0.jpg?size=948:533" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img id="toggleImage" onclick="toggleImage()" src="like.png" alt="">1m</div>
+                        <div><img src="comments.png" alt="">620k</div>
+                        <div><img src="share.png" alt="">265k</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile-pic.png">
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Aaj-tak-logo.png">
+
+                        <div>
+                            <p>Aaj Tak <i class="fa fa-check-circle"></i></p>
+                            <span>5 Jan 2022, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="" class="fa fa-ellipsis-v"></a>
+                </div>
+                <p class="post-text">Amazon Great Republic Day Sale: लगभग आधी कीमत पर मिलेंगे स्मार्टफोन्स और लैपटॉप्स</p>
+                <img src="https://akm-img-a-in.tosshub.com/aajtak/images/story/202201/amazon_sale-sixteen_nine.png?size=948:533" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img id="toggleImage" onclick="toggleImage()" src="like.png" alt="">1m</div>
+                        <div><img src="comments.png" alt="">620k</div>
+                        <div><img src="share.png" alt="">265k</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile-pic.png">
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more">Load More</button>
+
+        </div>
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>6</h3>
+                    <span>January</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa fa-map-marker"></i> DPSG</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>7</h3>
+                    <span>January</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa fa-map-marker"></i> DPSG</p>
+                    <a href="">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a class="close">Close</a>
+            </div>
+            <img src="advertisement.png" style="width: 100%; margin-bottom: 20px; border-radius: 4px;">
+            <p>Get A Job And Earn 30k Per Month!!!!
+            </p>
+            <br>
+            <div class="sidebar-title">
+                <a href="msg.html">
+                <h4>Conversation</h4>
+                </a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <a href="msg.html">
+                    <img src="member-1.png" alt="">
+                </a>
+                </div>
+                <a href="msg.html" style="text-decoration: none; color: #626262;">Hana Barnes</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <a href="msg.html">
+                    <img src="member-2.png" alt="">
+                    </a>
+                </div> <a href="msg.html" style="text-decoration: none; color: #626262;">Sam King</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <a href="msg.html">
+                    <img src="member-3.png" alt="">
+                    </a>
+                </div>
+                <a href="msg.html" style="text-decoration: none; color: #626262;">Willie Barnes</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <a href="msg.html">
+                    <img src="member-4.png" alt="">
+                    </a>    
+                </div>
+                <a href="msg.html" style="text-decoration: none; color: #626262;">Joe Marvelous</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var settingmenu = document.querySelector(".settings-menu");
+    var darkBtn = document.getElementById("dark-btn");
+
+    function myScript() {
+        settingmenu.classList.toggle("settings-menu-height");
+    }
+    darkBtn.onclick = function () {
+        darkBtn.classList.toggle("dark-btn-on");
+        document.body.classList.toggle("dark-theme");
+        if (localStorage.getItem("theme") == "light") {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    if (localStorage.getItem("theme") == "light") {
+        darkBtn.classList.remove("dark-btn-on");
+        document.body.classList.remove("dark-theme");
+    } else if (localStorage.getItem("theme") == "dark") {
+        darkBtn.classList.add("dark-btn-on");
+        document.body.classList.add("dark-theme");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+
+    function toggleImage() {
+        var img1 = "like-blue.png";
+        var img2 = "like.png";
+
+        var imgElement = document.getElementById('toggleImage');
+
+        imgElement.src = (imgElement.src === img1) ? img2 : img1;
+    }
+
+   
+    function toggleImage1() {
+        var img1 = "like-blue.png";
+        var img2 = "like.png";
+
+        var imgElement = document.getElementById('toggleImage1');
+
+        imgElement.src = (imgElement.src === img1) ? img2 : img1;
+    }
+
+    function toggleImage2() {
+        var img1 = "like-blue.png";
+        var img2 = "like.png";
+
+        var imgElement = document.getElementById('toggleImage2');
+
+        imgElement.src = (imgElement.src === img1) ? img2 : img1;
+    }
+
+    function toggleImage3() {
+        var img1 = "like-blue.png";
+        var img2 = "like.png";
+
+        var imgElement = document.getElementById('toggleImage3');
+
+        imgElement.src = (imgElement.src === img1) ? img2 : img1;
+    }
+</script>
+</html>
